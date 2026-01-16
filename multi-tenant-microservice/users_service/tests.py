@@ -15,13 +15,14 @@ python manage.py runserver
 
 
 git add .
-git commit -m "Initial commit: multi-tenant microservice Django project"
+git commit -m "multi-tenant microservice Django project"
 git push -u origin main
 
 
 
 
 
+git pull origin main
 
 
 
