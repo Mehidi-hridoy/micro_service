@@ -1,0 +1,24 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+env/
+venv/
+*.swp
+*.swo
+
+# Django
+*.log
+*.pot
+*.py[cod]
+*.coverage
+*.pytest_cache/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Docker
+*.env
+*.dockerignore
