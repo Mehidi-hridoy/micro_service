@@ -22,6 +22,7 @@ class Shipment(models.Model):
     tracking_number = models.CharField(max_length=100, unique=True)
     shipment_type = models.CharField(max_length=20, choices=SHIPMENT_TYPE, default='parcel')
     description = models.TextField()
+    dimensions = models.CharField(max_length=255, blank=True)
     weight = models.DecimalField(max_digits=10, decimal_places=2)
     pickup_address = models.TextField()
     delivery_address = models.TextField()

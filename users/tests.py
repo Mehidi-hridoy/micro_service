@@ -26,12 +26,16 @@ python manage.py migrate  # For default database
 # Create superuser
 python manage.py createsuperuser --database=users_db
 
+python manage.py makemigrations
+python manage.py migrate
 # Run development server
 python manage.py runserver
 
 git add .
-git commit -m "Microservices project setup"
+git commit -m "Project setup"
 git push -u origin main
 
+pip freeze > requirements.txt
+pip install -r requirements.txt
 
 """
