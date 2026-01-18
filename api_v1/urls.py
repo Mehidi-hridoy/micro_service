@@ -3,9 +3,9 @@ from . import views
 
 urlpatterns = [
     # Auth endpoints
-    path('auth/register/', views.UserRegistrationViewV1.as_view(), name='v1-register'),
-    path('auth/login/', views.UserLoginViewV1.as_view(), name='v1-login'),
-    path('auth/profile/', views.UserProfileViewV1.as_view(), name='v1-profile'),
+    path('register/', views.UserRegistrationViewV1.as_view(), name='v1-register'),
+    path('login/', views.UserLoginViewV1.as_view(), name='v1-login'),
+    path('profile/', views.UserProfileViewV1.as_view(), name='v1-profile'),
     
     # Shipment endpoints
     path('shipments/', views.ShipmentListViewV1.as_view(), name='v1-shipment-list'),

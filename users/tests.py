@@ -32,7 +32,7 @@ python manage.py migrate
 python manage.py runserver
 
 git add .
-git commit -m "Project setup"
+git commit -m "Project.. setup"
 git push -u origin main
 
 pip freeze > requirements.txt
